@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+Hi {{ user.first_name }}!
+
+{% if is_approved %}
+Congratulations! Your restaurant has been approved by our admin team. --FoodOnline
+{% else %}
+We are sorry! you are not eligble for publishing your food on our marketplace. For more details, please contact support@unomo.com --FoodOnline
+{% endif %}
+
+{% endautoescape %}
